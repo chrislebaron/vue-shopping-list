@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '../components/Home.vue';
+import round from 'vue-round-filter';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+    mode: 'history',
+    filters: {
+      round,
+    },
+    routes: [
+      {
+        path: '/',
+        name: 'home',
+        component: Home
+      }
+    ]
 })
