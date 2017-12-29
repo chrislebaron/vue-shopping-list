@@ -16,9 +16,6 @@
         components: {
             list: List
         },
-        data() {
-
-        },
         methods: {
 
         }
